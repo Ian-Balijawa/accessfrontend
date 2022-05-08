@@ -1,5 +1,5 @@
 import { chakra } from '@chakra-ui/react'
-import * as React from 'react'
+
 
 export const Finnik = (props) => (
   <chakra.svg viewBox="0 0 103 21" fill="none" {...props}>

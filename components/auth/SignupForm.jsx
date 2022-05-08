@@ -8,7 +8,7 @@ import {
 	Stack,
 	useColorModeValue as mode,
 } from '@chakra-ui/react';
-import * as React from 'react';
+;
 
 export const SignupForm = () => {
 	return (

@@ -1,5 +1,5 @@
 import { chakra, useToken } from '@chakra-ui/react'
-import * as React from 'react'
+
 
 export const Logo = (props) => {
   const { iconColor = 'currentColor', ...rest } = props

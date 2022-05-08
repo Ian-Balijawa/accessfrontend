@@ -1,5 +1,5 @@
 import { Divider, HStack, Text, useColorModeValue as mode } from '@chakra-ui/react'
-import * as React from 'react'
+
 
 export const DividerWithText = (props) => (
   <HStack my="8" {...props}>
