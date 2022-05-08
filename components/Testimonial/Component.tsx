@@ -7,8 +7,9 @@ import {
 	Text,
 	useColorModeValue as mode,
 } from '@chakra-ui/react';
-import * as React from 'react';
+;
 import { ImQuotesLeft } from 'react-icons/im';
+import * as React from 'react';
 
 interface TestimonialProps {
 	image: string;

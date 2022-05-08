@@ -1,5 +1,5 @@
 import { Box, SimpleGrid, useColorModeValue as mode } from '@chakra-ui/react';
-import * as React from 'react';
+;
 import { Component } from './Component';
 
 export const Testimonial = () => {
