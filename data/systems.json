@@ -3,21 +3,24 @@
 		"id": "1",
 		"name": "school management system",
 		"description": "lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum",
-		"version": "2.3.0",
-		"price": 1500000
+		"price": 1500000,
+		"href": "/systems/1",
+		"image": "/images/sheena.jpg"
 	},
 	{
 		"id": "2",
 		"name": "clinic management system",
 		"description": "lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum",
-		"version": "2.3.0",
-		"price": 1000000
+		"price": 1000000,
+		"href": "/systems/2",
+		"image": "/images/sheena2.jpg"
 	},
 	{
 		"id": "3",
 		"name": "Hardware management system",
 		"description": "lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum",
-		"version": "2.3.0",
-		"price": 1800000
+		"price": 1800000,
+		"href": "/systems/3",
+		"image": "/images/sheena.jpg"
 	}
 ]
