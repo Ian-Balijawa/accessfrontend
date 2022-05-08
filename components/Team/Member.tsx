@@ -1,7 +1,8 @@
 import { Box, Flex, Img, Text, useColorModeValue } from '@chakra-ui/react';
-import * as React from 'react';
+;
 import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { SocialLink } from './SocialLink';
+import * as React from 'react';
 
 interface Props {
 	image: string;

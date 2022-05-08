@@ -66,7 +66,7 @@ const DesktopNavContent = (props: FlexProps) => {
 			{...props}
 		>
 			<Box as='a' href={ROUTES.HOME} rel='home'>
-				<VisuallyHidden>Envelope</VisuallyHidden>
+				<VisuallyHidden>accessadvancedsystems</VisuallyHidden>
 				<Logo h='6' iconColor='blue.500' />
 			</Box>
 			<HStack

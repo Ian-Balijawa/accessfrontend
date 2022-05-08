@@ -16,7 +16,7 @@ export interface Link {
 
 export const links: Link[] = [
 	{ label: 'Systems', href: ROUTES.PRODUCTS },
-	{ label: 'PRICING', href: ROUTES.PRICING },
+	{ label: 'Pricing', href: ROUTES.PRICING },
 	{
 		label: 'Resources',
 		children: [

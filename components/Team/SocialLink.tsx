@@ -1,5 +1,5 @@
 import { LinkProps, Link, Text, useColorModeValue } from '@chakra-ui/react'
-import React from 'react'
+import * as React from 'react';
 
 interface Props extends LinkProps {
   href?: string

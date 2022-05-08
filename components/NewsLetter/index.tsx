@@ -7,7 +7,7 @@ import {
 	Text,
 	useColorModeValue as mode,
 } from '@chakra-ui/react';
-import * as React from 'react';
+;
 import { HiShieldCheck } from 'react-icons/hi';
 
 export const NewsLetter = () => {

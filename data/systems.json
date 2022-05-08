@@ -1,0 +1,23 @@
+[
+	{
+		"id": "1",
+		"name": "school management system",
+		"description": "lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum",
+		"version": "2.3.0",
+		"price": 1500000
+	},
+	{
+		"id": "2",
+		"name": "clinic management system",
+		"description": "lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum",
+		"version": "2.3.0",
+		"price": 1000000
+	},
+	{
+		"id": "3",
+		"name": "Hardware management system",
+		"description": "lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum",
+		"version": "2.3.0",
+		"price": 1800000
+	}
+]
