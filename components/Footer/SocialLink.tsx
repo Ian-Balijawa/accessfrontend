@@ -1,5 +1,5 @@
 import { chakra, HTMLChakraProps, useColorModeValue } from '@chakra-ui/react'
-import * as React from 'react'
+
 
 export const SocialLink = (props: HTMLChakraProps<'a'>) => (
   <chakra.a

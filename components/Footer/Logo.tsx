@@ -1,5 +1,5 @@
 import { chakra, HTMLChakraProps, useToken } from '@chakra-ui/react';
-import * as React from 'react';
+;
 
 export const Logo = (
 	props: HTMLChakraProps<'svg'> & { iconColor?: string }

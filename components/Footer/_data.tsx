@@ -1,6 +1,9 @@
 import { Badge } from '@chakra-ui/react'
-import * as React from 'react'
+import * as React from 'react';
+
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { LINKS } from '../../constants/links';
+import { ROUTES } from '../../constants/routes';
 
 export interface LinkGroupData {
   title: string
@@ -15,48 +18,33 @@ export const links: LinkGroupData[] = [
   {
     title: 'Product',
     links: [
-      { label: 'How it works', href: '#' },
-      { label: 'Features', href: '#' },
-      {
-        label: 'Integrations',
-        href: '#',
-        badge: (
-          <Badge colorScheme="blue" variant="solid" fontSize="0.625rem">
-            New
-          </Badge>
-        ),
-      },
-      { label: 'Pricing', href: '#' },
-      { label: 'Examples', href: '#' },
+      { label: 'How it works', href: ROUTES.DOCS },
+     { label: 'Pricing', href: ROUTES.PRICING },
     ],
   },
   {
     title: 'Resources',
     links: [
-      { label: 'Learn Center', href: '#' },
-      { label: 'Support', href: '#' },
-      { label: 'Slack Community', href: '#' },
-      { label: 'Events', href: '#' },
-      { label: 'Terms of Service', href: '#' },
-      { label: 'Privacy Policy', href: '#' },
+      { label: 'Learn Center', href: ROUTES.DOCS },
+      { label: 'Support', href: ROUTES.CONTACT_US },
+      { label: 'Events', href: ROUTES.EVENTS },
+      { label: 'Terms of Service', href: ROUTES.TOS },
+      { label: 'Privacy Policy', href: ROUTES.PRIVACY },
     ],
   },
   {
     title: 'About',
     links: [
-      { label: 'Our Story', href: '#' },
-      { label: 'Media Kit', href: '#' },
-      { label: 'Blog', href: '#' },
-      { label: 'Email us', href: '#' },
+      { label: 'Our Story', href: ROUTES.ABOUT },
+      { label: 'Blog', href: ROUTES.BLOGS },
+      { label: 'Email us', href: ROUTES.CONTACT_US },
     ],
   },
   {
     title: 'Get Started',
     links: [
-      { label: 'Start for free', href: '#' },
-      { label: 'Sign in', href: '#' },
-      { label: 'Download MacOS', href: '#' },
-      { label: 'Download Windows', href: '#' },
+      { label: 'Start for free', href: ROUTES.SIGNUP },
+      { label: 'Sign in', href: ROUTES.SIGNIN },
     ],
   },
 ]
@@ -68,10 +56,10 @@ interface SocialLink {
 }
 
 export const socialLinks: SocialLink[] = [
-  { label: 'Facebook', icon: <FaFacebook />, href: '#' },
-  { label: 'Instagram', icon: <FaInstagram />, href: '#' },
-  { label: 'LinkedIn', icon: <FaLinkedin />, href: '#' },
-  { label: 'LinkedIn', icon: <FaTwitter />, href: '#' },
+  { label: 'Facebook', icon: <FaFacebook />, href: LINKS.FACEBOOK },
+  { label: 'Instagram', icon: <FaInstagram />, href: LINKS.INSTAGRAM },
+  { label: 'LinkedIn', icon: <FaLinkedin />, href: LINKS.LINKEDIN },
+  { label: 'Twitter', icon: <FaTwitter />, href: LINKS.TWITTER },
 ]
 
 interface FooterLink {
@@ -80,9 +68,9 @@ interface FooterLink {
 }
 
 export const footerLinks: FooterLink[] = [
-  { label: 'Terms of Service', href: '#' },
-  { label: 'Privacy Policy', href: '#' },
-  { label: 'Offer terms', href: '#' },
-  { label: 'Legal notice', href: '#' },
-  { label: 'Sitemap', href: '#' },
+  { label: 'Terms of Service', href: ROUTES.TOS },
+  { label: 'Privacy Policy', href: ROUTES.PRIVACY },
+  { label: 'Offer terms', href: ROUTES.HOME },
+  { label: 'Legal notice', href: ROUTES.HOME },
+  { label: 'Sitemap', href: ROUTES.HOME },
 ]

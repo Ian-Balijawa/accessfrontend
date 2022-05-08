@@ -6,7 +6,7 @@ import {
 	Input,
 	useColorModeValue as mode,
 } from '@chakra-ui/react';
-import * as React from 'react';
+;
 
 export const SubscribeForm = () => (
 	<form

@@ -7,7 +7,7 @@ import {
 	Text,
 	useColorModeValue as mode,
 } from '@chakra-ui/react';
-import * as React from 'react';
+;
 import { FaHeart } from 'react-icons/fa';
 import { Logo } from './Logo';
 import { SocialLink } from './SocialLink';

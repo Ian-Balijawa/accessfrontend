@@ -1,5 +1,5 @@
 import { Box, Stack, Text } from '@chakra-ui/react'
-import * as React from 'react'
+
 import { LinkGroupData } from './_data'
 
 interface LinkGroupProps {
