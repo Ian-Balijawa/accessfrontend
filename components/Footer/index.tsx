@@ -8,6 +8,7 @@ import {
 	useColorModeValue as mode,
 } from '@chakra-ui/react';
 ;
+import Image from 'next/image';
 import { FaHeart } from 'react-icons/fa';
 import { Logo } from './Logo';
 import { SocialLink } from './SocialLink';
@@ -82,7 +83,13 @@ export const Footer = () => (
 					justify={{ base: 'space-between', lg: 'flex-start' }}
 					align={{ base: 'flex-start', md: 'center' }}
 				>
-					<Logo iconColor={mode('blue.500', 'blue.300')} h='6' />
+					{/* <Logo iconColor={mode('blue.500', 'blue.300')} h='6' /> */}
+					<Image
+						src={'/icons/Logo.png'}
+						width={40}
+						height={40}
+						alt='logo'
+					/>
 					<HStack
 						spacing='2'
 						mt={{ lg: '8' }}

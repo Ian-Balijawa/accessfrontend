@@ -11,9 +11,7 @@ import {
 	useColorModeValue as mode,
 } from '@chakra-ui/react';
 import { FaFacebook, FaGoogle } from 'react-icons/fa';
-import * as Logos from '../Brands';
 import { DividerWithText } from '../signup/DividerWithText';
-import { Logo } from '../Logo';
 import { SignupForm } from '../signup/SignupForm';
 import { Testimonial } from '../Testimonial';
 import { ROUTES } from '../../../constants/routes';
@@ -67,7 +65,7 @@ const SignupContainer: FunctionComponent<SignupContainerProps> = () => {
 								md: 'lg',
 							}}
 						>
-							<Logo
+							{/* <Logo
 								h='6'
 								mb={{
 									base: '16',
@@ -77,7 +75,7 @@ const SignupContainer: FunctionComponent<SignupContainerProps> = () => {
 									base: 'auto',
 									md: 'unset',
 								}}
-							/>
+							/> */}
 							<Box
 								mb='8'
 								textAlign={{
@@ -126,7 +124,6 @@ const SignupContainer: FunctionComponent<SignupContainerProps> = () => {
 									Sign up with Facebook
 								</Button>
 							</Stack>
-
 							<DividerWithText>or</DividerWithText>
 							<SignupForm />
 						</Box>
@@ -156,17 +153,6 @@ const SignupContainer: FunctionComponent<SignupContainerProps> = () => {
 						}}
 					>
 						<Testimonial />
-						<SimpleGrid
-							columns={3}
-							spacing='10'
-							paddingStart='12'
-							alignItems='center'
-							color='gray.400'
-						>
-							<Logos.Wakanda />
-							<Logos.ChatMonkey />
-							<Logos.Lighthouse />
-						</SimpleGrid>
 					</Flex>
 				</SimpleGrid>
 			</Box>

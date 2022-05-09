@@ -14,7 +14,6 @@ import { Card } from './Card';
 import { DividerWithText } from '../DividerWithText';
 import { Link } from './Link';
 import { LoginForm } from './LoginForm';
-import { Logo } from '../Logo';
 
 export const App = () => (
 	<Box
@@ -24,7 +23,6 @@ export const App = () => (
 		px={{ base: '4', lg: '8' }}
 	>
 		<Box maxW='md' mx='auto'>
-			<Logo mx='auto' h='8' mb={{ base: '10', md: '20' }} />
 			<Heading textAlign='center' size='xl' fontWeight='extrabold'>
 				Sign in to your account
 			</Heading>

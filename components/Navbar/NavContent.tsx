@@ -10,8 +10,6 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import { ROUTES } from '../../constants/routes';
-
-import { Logo } from './Logo';
 import { NavLink } from './NavLink';
 import { NavMenu } from './NavMenu';
 import { Submenu } from './Submenu';
@@ -32,7 +30,12 @@ const MobileNavContext = (props: FlexProps) => {
 					<ToggleButton isOpen={isOpen} onClick={onToggle} />
 				</Box>
 				<Box as='a' rel='home' mx='auto'>
-					<Logo h='24px' iconColor='blue.400' />
+					<Image
+						src={'/icons/Logo.png'}
+						width={40}
+						height={40}
+						alt='logo'
+					/>
 				</Box>
 				<Box visibility={{ base: 'hidden', sm: 'visible' }}>
 					<Button as='a' colorScheme='blue'>
@@ -76,7 +79,13 @@ const DesktopNavContent = (props: FlexProps) => {
 		>
 			<Box as='a' href={ROUTES.HOME} rel='home'>
 				<VisuallyHidden>accessadvancedsystems</VisuallyHidden>
-				<Logo h='6' iconColor='blue.500' />
+				{/* <Logo h='6' iconColor='blue.500' /> */}
+				<Image
+					src={'/icons/Logo.png'}
+					width={40}
+					height={40}
+					alt='logo'
+				/>
 			</Box>
 			<HStack
 				as='ul'
