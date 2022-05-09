@@ -51,7 +51,12 @@ const MobileNavContext = (props: FlexProps) => {
 					)
 				)}
 				<Box>
-					<Image src={'/images/sheena.jpg'} width={50} height={50} />
+					<Image
+						src={'/images/sheena.jpg'}
+						width={50}
+						height={50}
+						alt={'user'}
+					/>
 				</Box>
 				<Button colorScheme='blue' w='full' size='lg' mt='5'>
 					Try for free

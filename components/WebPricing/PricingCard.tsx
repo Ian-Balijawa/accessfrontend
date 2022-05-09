@@ -102,10 +102,7 @@ export const PricingCard = (props: PricingCardProps) => {
 					</UnorderedList>
 				</Box>
 			</Box>
-			<Box mt='10'>
-				//@ts-nocheck
-				<LightMode>{button}</LightMode>
-			</Box>
+			<Box mt='10'>{/* <LightMode>{button}</LightMode> */}</Box>
 		</Flex>
 	);
 };
