@@ -11,10 +11,10 @@ import * as React from 'react';
 import { FaFacebook, FaGithub, FaGoogle } from 'react-icons/fa';
 import { ROUTES } from '../../../constants/routes';
 import { Card } from './Card';
-import { DividerWithText } from './DividerWithText';
+import { DividerWithText } from '../DividerWithText';
 import { Link } from './Link';
 import { LoginForm } from './LoginForm';
-import { Logo } from './Logo';
+import { Logo } from '../Logo';
 
 export const App = () => (
 	<Box

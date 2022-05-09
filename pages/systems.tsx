@@ -17,6 +17,7 @@ import * as React from 'react';
 import { BsArrowRight, BsClockFill } from 'react-icons/bs';
 import { LINKS } from '../constants/Links';
 import { ROUTES } from '../constants/routes';
+import Head from 'next/head';
 
 interface BlogProps {
 	id: string;
@@ -30,58 +31,70 @@ interface BlogProps {
 const Card = (props: BlogProps) => {
 	const { href, description, image, name, price, id } = props;
 	return (
-		<LinkBox
-			as='article'
-			bg={{ sm: mode('white', 'gray.700') }}
-			shadow={{ sm: 'base' }}
-			rounded={{ sm: 'md' }}
-			overflow='hidden'
-			transition='all 0.2s'
-			_hover={{ shadow: { sm: 'lg' } }}
-		>
-			<Flex direction='column'>
-				<Img height='60' objectFit='cover' alt={name} src={image} />
-				<Flex direction='column' px={{ sm: '6' }} py='5'>
-					<Text
-						casing='uppercase'
-						letterSpacing='wider'
-						fontSize='xs'
-						fontWeight='semibold'
-						mb='2'
-						color='gray.500'
-					>
-						{name}
-					</Text>
-					<Heading as='h3' size='sm' mb='2' lineHeight='base'>
-						<LinkOverlay href={href}>{name}</LinkOverlay>
-					</Heading>
-					<Text
-						noOfLines={2}
-						mb='8'
-						color={mode('gray.600', 'gray.400')}
-					>
-						{description}
-					</Text>
-					<Flex
-						align='baseline'
-						justify='space-between'
-						fontSize='sm'
-						color={mode('gray.600', 'gray.400')}
-					>
-						<Text>
-							<Box as='a' textDecor='ButtonShadow' href={href}>
-								<Button>{`Price: UGX${price}`}</Button>
-							</Box>
+		<>
+			<Head>
+				<title>system | software</title>
+				<meta
+					name='description'
+					content='select what best suits your businesss'
+				/>
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
+			<LinkBox
+				as='article'
+				bg={{ sm: mode('white', 'gray.700') }}
+				shadow={{ sm: 'base' }}
+				rounded={{ sm: 'md' }}
+				overflow='hidden'
+				transition='all 0.2s'
+				_hover={{ shadow: { sm: 'lg' } }}
+			>
+				<Flex direction='column'>
+					<Img height='60' objectFit='cover' alt={name} src={image} />
+					<Flex direction='column' px={{ sm: '6' }} py='5'>
+						<Text
+							casing='uppercase'
+							letterSpacing='wider'
+							fontSize='xs'
+							fontWeight='semibold'
+							mb='2'
+							color='gray.500'
+						>
+							{name}
 						</Text>
-						<Link href='#'>
-							<Button colorScheme='blue' size='md' fontSize='md'>
+						<Heading as='h3' size='sm' mb='2' lineHeight='base'>
+							<LinkOverlay href={href}>{name}</LinkOverlay>
+						</Heading>
+						<Text
+							noOfLines={2}
+							mb='8'
+							color={mode('gray.600', 'gray.400')}
+						>
+							{description}
+						</Text>
+						<Flex
+							align='baseline'
+							justify='space-between'
+							fontSize='sm'
+							color={mode('gray.600', 'gray.400')}
+						>
+							<Button>{`Price: UGX${price}`}</Button>
+							<Button
+								as='a'
+								href={href}
+								colorScheme='blue'
+								size='md'
+								borderRadius='none'
+								_hover={{ textDecoraction: 'none' }}
+								fontSize='md'
+							>
 								{'Download Now'}
 							</Button>
-						</Link>
+						</Flex>
 					</Flex>
 				</Flex>
-			</Flex>
-		</LinkBox>
+			</LinkBox>
+		</>
 	);
 };
 

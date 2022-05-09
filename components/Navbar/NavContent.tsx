@@ -8,6 +8,7 @@ import {
 	VisuallyHidden,
 	useColorModeValue as mode,
 } from '@chakra-ui/react';
+import Image from 'next/image';
 import { ROUTES } from '../../constants/routes';
 
 import { Logo } from './Logo';
@@ -49,6 +50,9 @@ const MobileNavContext = (props: FlexProps) => {
 						</NavLink.Mobile>
 					)
 				)}
+				<Box>
+					<Image src={'/images/sheena.jpg'} width={50} height={50} />
+				</Box>
 				<Button colorScheme='blue' w='full' size='lg' mt='5'>
 					Try for free
 				</Button>
@@ -104,6 +108,16 @@ const DesktopNavContent = (props: FlexProps) => {
 				>
 					Sign up for free
 				</Button>
+
+				<Box>
+					<Flex>
+						<Image
+							src={'/images/sheena.jpg'}
+							width={50}
+							height={50}
+						/>
+					</Flex>
+				</Box>
 			</HStack>
 		</Flex>
 	);

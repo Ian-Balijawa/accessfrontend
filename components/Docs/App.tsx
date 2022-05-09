@@ -11,7 +11,7 @@ import { BlogAuthor } from './BlogAuthor';
 import { BlogMedia } from './BlogMedia';
 import { BlogMeta } from './BlogMeta';
 
-export const App = () => {
+export const Docs = () => {
 	return (
 		<Box as='section' bg={mode('gray.50', 'inherit')} py='24'>
 			<Box

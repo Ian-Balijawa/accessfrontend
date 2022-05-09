@@ -104,7 +104,7 @@ export const Footer = () => (
 						&copy; {new Date().getFullYear()} accessadvancedsystems
 					</Text>
 					<Text mt='2'>
-						Made with <Heart /> by accessadvacncedsystems.
+						Made with <Heart /> by accessadvancedsystems.
 					</Text>
 				</Box>
 			</Flex>

@@ -1,5 +1,5 @@
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next';
-import { App as Doc } from '../../components/Docs/App';
+import { Docs as Doc } from '../../components/Docs/App';
 
 export default function systemManaulPage({
 	pageComponentProps,

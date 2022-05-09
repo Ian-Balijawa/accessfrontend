@@ -29,7 +29,8 @@ export const links: Link[] = [
 			},
 			{
 				label: 'Events & Meetups',
-				description: 'Discover and join your local Sketch community.',
+				description:
+					'Get involved in events hapening at accessadvancedsystems.',
 				href: ROUTES.EVENTS,
 				icon: <IoCalendar />,
 			},

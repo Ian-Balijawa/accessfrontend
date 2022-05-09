@@ -8,15 +8,8 @@ import {
 	Text,
 	useColorModeValue as mode,
 } from '@chakra-ui/react';
-import { NextPage } from 'next';
 import Head from 'next/head';
-import { FaFacebook, FaGoogle } from 'react-icons/fa';
-import * as Logos from '../components/auth/Brands';
-import { DividerWithText } from '../components/auth/DividerWithText';
-import { Logo } from '../components/auth/Logo';
 import { App as Signin } from '../components/auth/signin/App';
-import { Testimonial } from '../components/auth/Testimonial';
-import { ROUTES } from '../constants/routes';
 
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next';
 

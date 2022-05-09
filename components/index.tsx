@@ -5,3 +5,6 @@ export * from './Team';
 export * from './Testimonial';
 export * from './Footer';
 export * from './NewsLetter';
+export * from './WebPricing';
+export * from './Docs/App';
+export * from './Blogs/App';

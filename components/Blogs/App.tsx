@@ -18,7 +18,7 @@ import { ROUTES } from '../../constants/routes';
 interface BlogProps {
 	category: string;
 	title: string;
-	href: string;
+	href?: string;
 	media: string;
 	description: string;
 	author: {
@@ -27,7 +27,7 @@ interface BlogProps {
 	};
 }
 
-const Blog = (props: BlogProps) => {
+const BlogCard = (props: BlogProps) => {
 	const { title, href, description, media, author, category } = props;
 	return (
 		<LinkBox
@@ -72,7 +72,7 @@ const Blog = (props: BlogProps) => {
 							By{' '}
 							<Box
 								as='a'
-								textDecor='underline'
+								textDecor='ButtonShadow'
 								href={author.href}
 							>
 								{author.name}
@@ -110,7 +110,7 @@ export const App = () => {
 					Featured Articles
 				</Heading>
 				<SimpleGrid columns={{ base: 1, md: 3 }} spacing='12' mb='10'>
-					<Blog
+					<BlogCard
 						category='Fashion'
 						media='/images/sheena2.jpg'
 						title='7 Steps to Get Professional Facial Results At Home'
@@ -121,7 +121,7 @@ export const App = () => {
 							href: LINKS.IAN_TWITTER,
 						}}
 					/>
-					<Blog
+					<BlogCard
 						category='Valentine'
 						media='/images/sheena.jpg'
 						title='The Best Excuses To Spend A Cozy Valentine’s Day In'
@@ -132,7 +132,7 @@ export const App = () => {
 							href: LINKS.JACKSON_TWITTER,
 						}}
 					/>
-					<Blog
+					<BlogCard
 						category='My Style'
 						media='/images/sheena.jpg'
 						title='Top 5 Best-Sellers, Most-Loved & Favorite Buys of 2020'

@@ -8,7 +8,9 @@ import {
 	Stack,
 	useColorModeValue as mode,
 } from '@chakra-ui/react';
-export const SigninForm = () => {
+;
+
+export const SignupForm = () => {
 	return (
 		<form
 			onSubmit={(e) => {
@@ -16,13 +18,13 @@ export const SigninForm = () => {
 			}}
 		>
 			<Stack spacing='4'>
+				<FormControl id='name'>
+					<FormLabel mb={1}>Name</FormLabel>
+					<Input autoComplete='name' />
+				</FormControl>
 				<FormControl id='email'>
 					<FormLabel mb={1}>Email</FormLabel>
-					<Input
-						type='email'
-						autoComplete='email'
-						placeholder='Email address'
-					/>
+					<Input type='email' autoComplete='email' />
 				</FormControl>
 				<FormControl>
 					<Flex align='baseline' justify='space-between'>
@@ -37,11 +39,7 @@ export const SigninForm = () => {
 							Forgot Password?
 						</Box>
 					</Flex>
-					<Input
-						type='password'
-						autoComplete='current-password'
-						placeholder='password'
-					/>
+					<Input type='password' autoComplete='current-password' />
 				</FormControl>
 				<Button
 					type='submit'
@@ -49,7 +47,7 @@ export const SigninForm = () => {
 					size='lg'
 					fontSize='md'
 				>
-					Signin
+					Create my account
 				</Button>
 			</Stack>
 		</form>
