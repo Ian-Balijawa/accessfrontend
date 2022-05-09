@@ -129,6 +129,7 @@ const DesktopNavContent = (props: FlexProps) => {
 							src={'/images/sheena.jpg'}
 							width={50}
 							height={50}
+							alt='customerphoto'
 						/>
 					</Flex>
 				</Box>
