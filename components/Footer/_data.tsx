@@ -2,7 +2,7 @@ import { Badge } from '@chakra-ui/react'
 import * as React from 'react';
 
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import { LINKS } from '../../constants/Links';
+import { LINKS } from '../../constants/routes';
 import { ROUTES } from '../../constants/routes';
 
 export interface LinkGroupData {
