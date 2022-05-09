@@ -15,8 +15,6 @@ import {
 } from '@chakra-ui/react';
 import * as React from 'react';
 import { BsArrowRight, BsClockFill } from 'react-icons/bs';
-import { LINKS } from '../constants/Links';
-import { ROUTES } from '../constants/routes';
 import Head from 'next/head';
 
 interface BlogProps {
